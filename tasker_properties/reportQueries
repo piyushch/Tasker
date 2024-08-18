@@ -1,0 +1,2 @@
+Request status for 7 days -> SELECT Request_status, TRUNC(sys_creation_date) Request_Date, COUNT(0) REQUEST_CNT, SUM(REQUESTED_QUANTITY) REQUEST_QUANTITY FROM rm1_request WHERE sys_creation_date > TRUNC(sysdate-7) and ENTITY_TYPE = 'BULK' GROUP BY (request_status, TRUNC(sys_creation_date)) ORDER BY 1 ;
+TRB Errors Dummy  -> select SUB_APPL_ID, SUB_TRX_ID, TREATMENT_COUNT, ERROR_CODE, ERROR_STATUS from trb1_sub_errs where rownum <6;

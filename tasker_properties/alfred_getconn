@@ -1,0 +1,16 @@
+if [[ $1 == "getconn" ]]
+then
+tnsping $ORACLE_SID
+echo "#"
+echo "$APP_ORA_USER#$APP_ORA_PASS"
+fi
+
+if [[ $1 == "getattachfiles" ]]
+then
+find $ABP_BL_ROOT/work/ -name "Cycle$2*$3.csv" -type f
+fi
+
+if [[ $1 == "getblwork" ]]
+then
+echo $ABP_BL_ROOT/work
+fi

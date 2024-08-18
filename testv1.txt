@@ -1,0 +1,11 @@
+if CNT>0
+Run select test1 and execute filescount and select ac1_control_list and select uniontest and select CRM_BAP_ERR and select OMS_TB_AUto and update UPDATE_sub;
+Declare_v1
+CNT->ls -ltr /users/gen/abpwrk1/pbin/app | wc -l->END;
+test1->select * from tasker_config->Y->ABPapp->END;
+ac1_control_list->select IDENTIFIER, SYS_CREATION_DATE, FILE_NAME, FILE_PATH, HOST_NAME, FILE_STATUS from ac1_control where rownum<10->Y->END;
+filescount->ls -ltr /users/gen/abpwrk1/pbin/app | wc -l->Y->END;
+uniontest->select  SYS_CREATION_DATE from ac1_control where rownum<10 union select SYS_CREATION_DATE from trb1_pub_log where rownum<10->Y->ABPapp->END;
+CRM_BAP_ERR->select count(1) from table_bg_action->Y->CRMapp->END;
+OMS_TB_AUto->select count(1) from tbauto_request where REQUEST_STATUS='FA'->Y->omsapp->END;
+UPDATE_sub->update subscriber set SYS_CREATION_DATE=sysdate,DL_SERVICE_CODE='RC;N' where SUBSCRIBER_NO=703938146->Y->abpapp->END;

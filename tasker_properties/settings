@@ -1,0 +1,10 @@
+printlog=true| 
+runinterval=-1| // After how many minutes report should be genetared
+mail.from=abpwrk1@amdocs.com| // From email address of SMTP server
+mail.to=piyushch@amdocs.com| // Report reciepent mail IDs , saperate by ";" semi-colon
+mail.subject=Report Mail| 
+mail.head=Status Report|
+table.head.color=#bbaaee|
+table.row.color=#d4e3e5|
+table.text.color=#333333|
+tempSheetpath=C:/|

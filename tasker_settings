@@ -1,0 +1,9 @@
+printlog=true| 
+runinterval=-1| // After how many minutes report should be genetared
+mail.from=abpwrk1@amdocs.com| // From email address of SMTP server
+mail.to=piyushch@amdocs.com| // Report reciepent mail IDs , saperate by ";" semi-colon
+mail.subject=Tasker| 
+mail.head=Task executed |
+table.head.color=#1865a0|
+table.row.color=#d9edfc|
+table.text.color=#333333|

@@ -1,0 +1,205 @@
+if [[ $1 == "getconn" ]]
+then
+. GN1SetConnPrm -t IGNORE -n TRB1MANAGER -r F  -d BSS -a DEFAULT >/dev/null
+echo "DBuser=$USER<end>;"
+echo "DBPAss=$PASSWORD<end>;"
+echo "DBhost=$HOST<end>;"
+echo "DBport=$PORT<end>;"
+echo "DBsid=$INSTANCE<end>;"
+
+fi
+
+if [[ $1 == "getattachfiles" ]]
+then
+find $ABP_BL_ROOT/work/ -name "Cycle$2*$3.csv" -type f
+fi
+
+if [[ $1 == "getblwork" ]]
+then
+echo $ABP_BL_ROOT/work
+fi
+if [[ $1 == "getconn_omsapp" ]]
+then
+. GN1SetConnPrm -t IGNORE -n GN3KPIHOURLY -r F  -d BSS -a OMS >/dev/null
+echo "DBuser=$USER<end>;"
+echo "DBPAss=$PASSWORD<end>;"
+echo "DBhost=$HOST<end>;"
+echo "DBport=$PORT<end>;"
+echo "DBsid=$INSTANCE<end>;"
+
+fi
+
+if [[ $1 == "getconn_crmapp" ]]
+then
+. GN1SetConnPrm -t IGNORE -n GN3KPIHOURLY -r F  -d BSS -a CRM  >/dev/null
+echo "DBuser=$USER<end>;"
+echo "DBPAss=$PASSWORD<end>;"
+echo "DBhost=$HOST<end>;"
+echo "DBport=$PORT<end>;"
+echo "DBsid=$INSTANCE<end>;"
+
+fi
+
+if [[ $1 == "getconn_abpapp" ]]
+then
+. GN1SetConnPrm -t IGNORE -n TRB1MANAGER -r F  -d BSS -a DEFAULT >/dev/null
+echo "DBuser=$USER<end>;"
+echo "DBPAss=$PASSWORD<end>;"
+echo "DBhost=$HOST<end>;"
+echo "DBport=$PORT<end>;"
+echo "DBsid=$INSTANCE<end>;"
+
+fi
+
+if [[ $1 == "getconn_abpopr" ]]
+then
+. GN1SetConnPrm -t IGNORE -n OP1OPRCON -r F  -d BSS -a DEFAULT >/dev/null
+echo "DBuser=$USER<end>;"
+echo "DBPAss=$PASSWORD<end>;"
+echo "DBhost=$HOST<end>;"
+echo "DBport=$PORT<end>;"
+echo "DBsid=$INSTANCE<end>;"
+
+fi
+
+if [[ $1 == "getconn_anmapp" ]]
+then
+. GN1SetConnPrm -t IGNORE -n GN3ENVCHECK -r F  -d BSS -a ANM >/dev/null
+echo "DBuser=$DB_USER<end>;"
+echo "DBPAss=$DB_PASSWORD<end>;"
+echo "DBhost=$DB_HOST<end>;"
+echo "DBport=$DB_PORT<end>;"
+echo "DBsid=$DB_INSTANCE<end>;"
+
+fi
+
+if [[ $1 == "getconn_epcapp" ]]
+then
+. GN1SetConnPrm -t IGNORE -n ADJ1CPEXT -r F  -d BSS -a ADJAPPL >/dev/null
+echo "DBuser=$ADJAPPL_DB_USER<end>;"
+echo "DBPAss=$ADJAPPL_DB_PASSWORD<end>;"
+echo "DBhost=$ADJAPPL_DB_HOST<end>;"
+echo "DBport=$ADJAPPL_DB_PORT<end>;"
+echo "DBsid=$ADJAPPL_DB_INSTANCE<end>;"
+
+fi
+
+if [[ $1 == "getconn_abpusg1" ]]
+then
+. GN1SetConnPrm -t IGNORE -n ADJ1CPCYCUSG -r F  -d BSS -a CUSTUSG1 >/dev/null
+echo "DBuser=$ADJUSG1_DB_USER<end>;"
+echo "DBPAss=$ADJUSG1_DB_PASSWORD<end>;"
+echo "DBhost=$ADJUSG1_DB_HOST<end>;"
+echo "DBport=$ADJUSG1_DB_PORT<end>;"
+echo "DBsid=$ADJUSG1_DB_INSTANCE<end>;"
+
+fi
+
+if [[ $1 == "getconn_abpusg2" ]]
+then
+. GN1SetConnPrm -t IGNORE -n ADJ1CPCYCUSG -r F  -d BSS -a CUSTUSG2 >/dev/null
+echo "DBuser=$ADJUSG2_DB_USER<end>;"
+echo "DBPAss=$ADJUSG2_DB_PASSWORD<end>;"
+echo "DBhost=$ADJUSG2_DB_HOST<end>;"
+echo "DBport=$ADJUSG2_DB_PORT<end>;"
+echo "DBsid=$ADJUSG2_DB_INSTANCE<end>;"
+
+fi
+
+
+if [[ $1 == "getconn_abpusg3" ]]
+then
+. GN1SetConnPrm -t IGNORE -n ADJ1CPCYCUSG -r F  -d BSS -a CUSTUSG3 >/dev/null
+echo "DBuser=$ADJUSG3_DB_USER<end>;"
+echo "DBPAss=$ADJUSG3_DB_PASSWORD<end>;"
+echo "DBhost=$ADJUSG3_DB_HOST<end>;"
+echo "DBport=$ADJUSG3_DB_PORT<end>;"
+echo "DBsid=$ADJUSG3_DB_INSTANCE<end>;"
+
+fi
+
+
+if [[ $1 == "getconn_abpusg4" ]]
+then
+. GN1SetConnPrm -t IGNORE -n ADJ1CPCYCUSG -r F  -d BSS -a CUSTUSG4 >/dev/null
+echo "DBuser=$ADJUSG4_DB_USER<end>;"
+echo "DBPAss=$ADJUSG4_DB_PASSWORD<end>;"
+echo "DBhost=$ADJUSG4_DB_HOST<end>;"
+echo "DBport=$ADJUSG4_DB_PORT<end>;"
+echo "DBsid=$ADJUSG4_DB_INSTANCE<end>;"
+
+fi
+
+
+if [[ $1 == "getconn_abpusg5" ]]
+then
+. GN1SetConnPrm -t IGNORE -n ADJ1CPCYCUSG -r F  -d BSS -a CUSTUSG5 >/dev/null
+echo "DBuser=$ADJUSG5_DB_USER<end>;"
+echo "DBPAss=$ADJUSG5_DB_PASSWORD<end>;"
+echo "DBhost=$ADJUSG5_DB_HOST<end>;"
+echo "DBport=$ADJUSG5_DB_PORT<end>;"
+echo "DBsid=$ADJUSG5_DB_INSTANCE<end>;"
+
+fi
+
+
+if [[ $1 == "getconn_falapp" ]]
+then
+. GN1SetConnPrm -t IGNORE -n GN3ENVCHECK -r F  -d BSS -a AFALA >/dev/null
+echo "DBuser=$DB_USER<end>;"
+echo "DBPAss=$DB_PASSWORD<end>;"
+echo "DBhost=$DB_HOST<end>;"
+echo "DBport=$DB_PORT<end>;"
+echo "DBsid=$DB_INSTANCE<end>;"
+
+fi
+
+
+
+
+if [[ $1 == "getconn_asomapp" ]]
+then
+. GN1SetConnPrm -t IGNORE -n GN9RCNASOMOA -r F  -d BSS -a ASOM >/dev/null
+echo "DBuser=$USER<end>;"
+echo "DBPAss=$PASSWORD<end>;"
+echo "DBhost=$HOST<end>;"
+echo "DBport=$PORT<end>;"
+echo "DBsid=$INSTANCE<end>;"
+
+fi
+
+
+if [[ $1 == "getconn_mcoapp" ]]
+then
+. GN1SetConnPrm -t IGNORE -n GN3ENVCHECK -r F  -d BSS -a MCO >/dev/null
+echo "DBuser=$DB_USER<end>;"
+echo "DBPAss=$DB_PASSWORD<end>;"
+echo "DBhost=$DB_HOST<end>;"
+echo "DBport=$DB_PORT<end>;"
+echo "DBsid=$DB_INSTANCE<end>;"
+
+fi
+
+if [[ $1 == "getconn_mcssapp" ]]
+then
+. GN1SetConnPrm -t IGNORE -n GN3ENVCHECK -r F  -d BSS -a MCSSDB >/dev/null
+echo "DBuser=$DB_USER<end>;"
+echo "DBPAss=$DB_PASSWORD<end>;"
+echo "DBhost=$DB_HOST<end>;"
+echo "DBport=$DB_PORT<end>;"
+echo "DBsid=$DB_INSTANCE<end>;"
+
+fi
+
+
+if [[ $1 == "getconn_mcssebl" ]]
+then
+. GN1SetConnPrm -t IGNORE -n GN3ENVCHECK -r F  -d BSS -a MCSSEBL >/dev/null
+echo "DBuser=$DB_USER<end>;"
+echo "DBPAss=$DB_PASSWORD<end>;"
+echo "DBhost=$DB_HOST<end>;"
+echo "DBport=$DB_PORT<end>;"
+echo "DBsid=$DB_INSTANCE<end>;"
+
+fi
+

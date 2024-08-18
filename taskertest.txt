@@ -1,0 +1,13 @@
+ if query1>0
+ Run update update1 and delete delete1 and select select1 and execute date1 and export select1 and export query1 and attach undo;
+ else
+ Run update update1  and select select1 and select select1;
+ Declare
+ query1 -> select 1 from dual ;
+ select1 -> select * from tasker_Request -> Y;
+ update1 -> UPDATE TASKER_REQUEST SET LASTEXECUTED=SYSDATE WHERE ROWID='AAA6IsAAFAAGQ7wAAA';
+ delete1 -> DELETE from tasker_test where Name='abc4';
+ backup1 -> create table table1 as (select * from tasker_test);
+ insert1 -> insert into table1 (select * from tasker_test);
+ undo -> /users/gen/abpwrk1/pbin/app/undo.csv -> Y;
+ date1 -> date -> Y;

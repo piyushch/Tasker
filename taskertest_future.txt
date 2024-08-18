@@ -1,0 +1,12 @@
+  if query1=1 and/or query2>=3 
+ Run update/select/delete/backup update1 and delete 1
+ Fetch file1
+ else
+ Run update update2	and delete 2 ;
+ 
+ query1 -> sleetc * from ;
+ query2 -> ;
+ update1 -> ;
+ file1 -> ;
+ 
+ 
