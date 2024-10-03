@@ -66,7 +66,7 @@ Declare
 ```sql
 Insert into TASKER_ALERT_REQUEST 
 values (1,'BCC','TRB PUB LOG','select count(1) from trb1_pub_log','Y','GREATER_THAN',-1,200,500,'QUERY',null,'abpapp',1,null,null);
-
+```
 Notes:
 ALERT_GROUP: Groups alerts into separate emails; you can run one group at a time or all together.
 THRESHOLD_CONDITION: LESS_THAN / GREATER_THAN values.
