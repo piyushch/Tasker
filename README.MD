@@ -1,5 +1,13 @@
 ****************************** ReadMe Tasker  ***************************************************
-The Project S
+The Project started with an Idea to create a replica of Me.
+Whatever task I do in my work flow for application management Tasker should be able to replicate automatically  with easy instructions .
+
+Start this project in 2016 , as each line of code is written by me and it does not include and Proprietary software code from my employer ,
+I was able to upload it to GitHub.
+
+<b>Tasker is an Automation tool which will any Task we assign/Configure in it .</b>
+
+
 
 
 -----------------------------------------------------------
