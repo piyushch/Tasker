@@ -91,3 +91,21 @@ Tasker ALERT <ALERT_GROUP>    # Run a single group
 Tasker ALERT '*'              # Run all groups
 ```
 
+## Keywords for Tasks
+
+### For SQL Queries
+- `select`
+- `update`
+- `delete`
+- `grant`
+- `insert`
+- `backup` (Creates backup table from a select query)
+- `drop`
+- `create`
+- `export` (Attaches select query output to an Excel sheet)
+
+### To Fetch Files from Location
+- `attach`
+
+### To Execute Unix Commands
+- `execute`
