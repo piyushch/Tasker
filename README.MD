@@ -14,7 +14,6 @@ Tasker is an automation tool designed to replicate any task assigned or configur
   - Non-Alert Task Syntax (With Semicolon)
 - Running Tasker
 - Keywords for Tasks
-- DB Keywords for Tasks/Alerts
 
 ## Introduction
 
