@@ -67,7 +67,7 @@ Declare
 Insert into TASKER_ALERT_REQUEST 
 values (1,'BCC','TRB PUB LOG','select count(1) from trb1_pub_log','Y','GREATER_THAN',-1,200,500,'QUERY',null,'abpapp',1,null,null);
 ```
-# Notes:
+## Notes:
 - ALERT_GROUP: Groups alerts into separate emails; you can run one group at a time or all together.
 - THRESHOLD_CONDITION: LESS_THAN / GREATER_THAN values.
 - NOTIFY_THRESHOLD: Use -1 to always show the alert in the report, otherwise alert will not be shown if the threshold is not met.
@@ -76,6 +76,18 @@ values (1,'BCC','TRB PUB LOG','select count(1) from trb1_pub_log','Y','GREATER_T
 - PRIORITY, ATTR_VALUE1, ATTR_VALUE2: Not in use.
 
 
-## How to Run Tasker
+# How to Run Tasker
 - Run as Daemon: Set runinterval in the tasker_config table. After how many minutes should the report be generated?
 - Run as One-Time Script: Set runinterval = -1
+
+- Run Any Report by Request
+```plaintext
+Tasker <REPORT_NAME>
+```
+
+- Generate Alert by Request
+```plaintext
+Tasker ALERT <ALERT_GROUP>    # Run a single group
+Tasker ALERT '*'              # Run all groups
+```
+
