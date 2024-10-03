@@ -74,3 +74,8 @@ values (1,'BCC','TRB PUB LOG','select count(1) from trb1_pub_log','Y','GREATER_T
 - ALERT_TYPE: Can be QUERY or COMMAND.
 - ALERT_USER_HOST, APPLICATION_DB: Use comma-separated multiple user@hosts or database keywords; each db/host will appear as a new row in the email.
 - PRIORITY, ATTR_VALUE1, ATTR_VALUE2: Not in use.
+
+
+## How to Run Tasker
+- Run as Daemon: Set runinterval in the tasker_config table. After how many minutes should the report be generated?
+- Run as One-Time Script: Set runinterval = -1
