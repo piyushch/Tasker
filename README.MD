@@ -4,7 +4,7 @@ Tasker is an automation tool designed to replicate any task assigned or configur
 
 ## Table of Contents
 
--- Content
+
 - Email Configuration Reference
 - Configuring Tasks
   - Non-Alert Tasks
