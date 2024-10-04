@@ -1,6 +1,6 @@
 # Tasker
 The idea behind Tasker originated from the desire to create a tool that could replicate my workflow for application management, automating every task I perform with simple, intuitive instructions.
-Tasker is an automation tool designed to replicate any task assigned or configured in it. This project started in 2016 with the goal of creating a tool that can automate the workflow for application management.
+This project started in 2016
 
 ## Table of Contents
 
